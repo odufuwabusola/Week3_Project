@@ -1,6 +1,23 @@
-#!/bin/bash
+#frontend-code
 
+#!/bin/bash
 yum install httpd -y
 systemctl start httpd
 systemctl enable httpd
 syste status httpd
+
+
+#backend-code
+
+#!/bin/bash
+yum install git -y
+yum install -y java-17-amazon-coretto -y
+yum install maven-y
+yum install -y python3-pip
+python3 -m pip install --upgrade pip
+python3 -m pip install virtualenv
+
+
+git --version
+java --version
+python3 --version
